@@ -1,7 +1,7 @@
 #include <time.h>
 //#include "syscall.h"
 
-__attribute__((eosio_wasm_import))
+__attribute__((import_name("current_time")))
 extern uint64_t current_time();
 
 time_t time(time_t *t)
